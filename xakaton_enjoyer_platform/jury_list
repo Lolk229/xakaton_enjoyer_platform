@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Жюри</title>
+  <!-- Подключение Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"> <!-- Ваш CSS файл -->
+</head>
+<body>
+
+  <!-- Шапка -->
+  <div class="container-fluid py-2">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <a href="organiser_account.html">
+        <img src="images/usurt_CHADONAM.png" alt="Logo" width="60" height="55" style="cursor: pointer;">
+      </a>
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-primary btn-sm">Список команд</button>
+        <a href="organiser_account.html">
+          <img src="images/Sasha.webp" alt="Profile Icon" class="rounded-circle" width="60" height="55">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Основной контент -->
+  <div class="container">
+    <h1 class="text-center mb-4">Жюри</h1>
+
+    <!-- Таблица жюри -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge1.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Сученинов Алексей</h5>
+        <p>Диджитех</p>
+        <p>руководитель отдела методологии</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge2.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Евсеев Николай</h5>
+        <p>Диджитех</p>
+        <p>операционный директор</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge3.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Эльза Власова</h5>
+        <p>1С-Рарус</p>
+        <p>Главный директор филиала в Челябинске «1С-Рарус» Директор ОРКК Челябинск</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge4.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Андрей Аксеньюшкин</h5>
+        <p>ООО «Индустриальные Информационные Технологии»</p>
+        <p>Технический директор</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge5.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Клинских Павел</h5>
+        <p>ПервыйБит</p>
+        <p>Руководитель офиса в Екатеринбурге</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge6.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Эренбург Александра</h5>
+        <p>Жизньмарт</p>
+        <p>Руководитель IT направления</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge1.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Ирина Дмитриева</h5>
+        <p>HRD компании «Самолет Плюс»</p>
+        <p>«Самолет Плюс» – это синергия онлайн-платформы и офисов услуг по всей России.</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge1.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Сергей Калегин</h5>
+        <p>УГМК-Телеком</p>
+        <p>Директор по цифровым технологиям</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge1.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Евгений Григорьев</h5>
+        <p>ТПГ РИВАЛЬ</p>
+        <p>Руководитель отдела разработки ПО</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge1.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Светлана Данилова</h5>
+        <p>ОККАМ</p>
+        <p>Директор по ИТ</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge1.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Наталья Ломовцева</h5>
+        <p>УРГАУ</p>
+        <p>Проректор по образовательной деятельности и цифровизации</p>
+      </div>
+      <!-- Член жюри -->
+      <div class="col text-center">
+        <img src="images/judge1.jpg" class="rounded-circle mb-2" width="120" height="120">
+        <h5>Екатерина Супивник</h5>
+        <p>ГК Партнерство Маминой</p>
+        <p>директор по маркетингу, PR и GR</p>
+      </div>
+    </div>
+  </div>
+  <br>
+
+        <!-- Футер -->
+  <footer class="bg-light text-center pt-4">
+    <div class="container">
+      <p>Сайт и презентацию разработали студенты первого и второго курса</p>
+      <p>Цыганков Никита - 2 курс</p>
+      <p>Ванюшин Илья - 1 курс</p>
+      <p>Гаманюк Кирилл - 1 курс</p>
+      <p>Копейка Иван - 1 курс</p>
+      <p>Email: <a href="mailto:team@example.com">team_chadonam_usurt@usurt.com</a></p>
+      <p class="small">&copy; 2025 Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Подключение Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
