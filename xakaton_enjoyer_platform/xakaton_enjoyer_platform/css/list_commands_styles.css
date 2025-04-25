@@ -1,0 +1,42 @@
+/* Прозрачная фиксированная шапка */
+    .navbar-transparent { background-color: rgba(255,255,255,0) !important; }
+
+
+.top-bar {
+background-color: #fff;
+border-bottom: 1px solid #ddd;
+padding: 0.5rem 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.top-bar img {
+height: 40px;
+}
+.top-bar .profile-icon {
+height: 30px;
+width: 30px;
+}
+
+
+    /* Кнопки "Перейти" */
+    .btn-case {
+      border: 1px solid #0d6efd;
+      color: #0d6efd;
+      background: transparent;
+      border-radius: .25rem;
+      padding: .375rem .75rem;
+    }
+    /* Кнопки "Чат" */
+    .btn-chat {
+      border: 1px solid #6c757d;
+      color: #6c757d;
+      background: transparent;
+      border-radius: .25rem;
+      padding: .25rem .5rem;
+      font-size: .875rem;
+    }
+    /* Отступ между кейсами */
+    .case-section { margin-bottom: 3rem; }
+    /* Междустрочный интервал 1.5 */
+    .list-group-item { line-height: 1.5; }

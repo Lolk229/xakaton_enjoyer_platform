@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Личный кабинет пользователя</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/regular_user_account_styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+   <!-- Шапка -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-transparent fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="regular_user_account.html">
+        <img src="images/usurt_CHADONAM.png" alt="Логотип команды" width="60" height="55">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+              <a href="timetable_user.html">
+                <button class="btn nav-btn">Расписание</button>
+              </a>
+              <a href="results.html">
+                <button class="btn nav-btn">Результаты</button>
+              </a>
+              <a href="cases_user.html">
+                <button class="btn nav-btn">Кейс</button>
+              </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container mt-4">
+    <div class="row">
+
+      <!-- Левая колонка -->
+      <div class="col-lg-4">
+        <div id="team-info" class="text-center mb-5">
+          <h2>Chadonam</h2>
+          <img src="images/usurt_CHADONAM.png" alt="Эмблема команды" class="my-3">
+          <p><strong>Институт:</strong> Уральский государственный университет путей сообщения</p>
+          <ul class="list-unstyled">
+            <li>Цыганков Никита - ИТси-213</li>
+            <li>Ванюшин Илья - ИТси-124</li>
+            <li>Гаманюк Кирилл - Итси-124</li>
+            <li>Копейка Иван - Итси-124</li>
+          </ul>
+        </div>
+
+        <div id="tutor-info" class="text-center mb-5">
+          <h4>Тьютор группы</h4>
+          <img id="tutor-photo" src="images/tutor.jpg" alt="Фото тьютора" class="mb-3">
+          <p><strong>Виталий Крылов</strong></p>
+          <p>Должность: Технический директор</p>
+          <p>Опыт работы: 5 лет управляет отделом</p>
+          <a href="https://t.me/@Dmitrii_starik" target="_blank" class="btn btn-primary">
+            Связаться через Telegram
+          </a>
+        </div>
+      </div>
+
+      <!-- Правая колонка -->
+      <div class="col-lg-8">
+        <!-- Чат команды -->
+        <div class="card chat-card mb-4">
+          <div class="card-header">Чат команды</div>
+          <div class="chat-body"></div>
+          <div class="chat-footer d-flex">
+            <input type="text" class="form-control" placeholder="Пишите сообщение">
+            <button class="btn btn-primary ms-2" type="button">Отправить</button>
+          </div>
+        </div>
+
+        <!-- Чат с тьютором/жюри -->
+        <div class="card chat-card">
+          <div class="card-header">Чат с тьютором и жюри</div>
+          <div class="chat-body"></div>
+          <form id="tutorChatForm">
+            <div class="chat-footer d-flex">
+              <input type="text" class="form-control" placeholder="Пишите сообщение">
+              <button class="btn btn-primary ms-2" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Кнопка-тoggle уведомлений в виде круглой иконки -->
+  <button id="toggleNotifications">
+    <img src="images/notification-icon.png" alt="Уведомления">
+  </button>
+
+  <!-- Окно уведомлений -->
+  <div id="notifications" class="card shadow-sm d-none">
+    <div class="card-header">Уведомления</div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Следующее событие: Открытие кейсов через 5 мин</li>
+      <li class="list-group-item">Консультация с тьютором в 14:00</li>
+    </ul>
+  </div>
+
+  <!-- Футер -->
+  <footer class="bg-light text-center pt-4">
+    <div class="container">
+      <p>Сайт и презентацию разработали студенты первого и второго курса</p>
+      <p>Цыганков Никита - 2 курс</p>
+      <p>Ванюшин Илья - 1 курс</p>
+      <p>Гаманюк Кирилл - 1 курс</p>
+      <p>Копейка Иван - 1 курс</p>
+      <p>Email: <a href="mailto:team@example.com">team_chadonam_usurt@usurt.com</a></p>
+      <p class="small">&copy; 2025 Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Toggle notifications panel
+    document.getElementById('toggleNotifications').addEventListener('click', function() {
+      document.getElementById('notifications').classList.toggle('d-none');
+    });
+  </script>
+</body>
+</html>
